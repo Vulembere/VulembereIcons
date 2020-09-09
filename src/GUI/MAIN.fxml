@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIControllers.MAINController">
+   <children>
+      <AnchorPane layoutX="241.0" layoutY="30.0" prefHeight="46.0" prefWidth="1007.0" style="-fx-background-color: #F2F2F2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@App.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="8.0" prefHeight="27.0" prefWidth="356.0" text="VULEMBERE FX-ICONS" textFill="#019966">
+               <font>
+                  <Font name="Century Gothic Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="15.0" prefHeight="17.0" prefWidth="49.0" text="1.0" textFill="#019966" />
+            <AnchorPane layoutX="629.0" layoutY="8.0" prefHeight="30.0" prefWidth="356.0" AnchorPane.rightAnchor="22.0">
+               <children>
+                  <TextField fx:id="txtSearch" layoutX="13.0" layoutY="3.0" onKeyReleased="#rechercher" prefHeight="25.0" prefWidth="219.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="0.0" />
+                  <Label layoutX="50.0" layoutY="7.0" prefHeight="17.0" prefWidth="83.0" text="Rechercher ici" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="183.0" layoutY="45.0" prefHeight="680.0" prefWidth="951.0" stylesheets="@custom-scroll.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="183.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+         <content>
+            <FlowPane fx:id="contenaire" hgap="5.0" prefHeight="676.0" prefWidth="1043.0" style="-fx-background-color: white;" vgap="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <VBox layoutY="46.0" prefHeight="148.0" prefWidth="181.0">
+         <children>
+             <Label fx:id="FontAwasome" onMouseClicked="#selectFontAwesomeIcon" prefHeight="37.0" prefWidth="181.0" style="-fx-padding:10;" text="FontAwesomeIcon">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></Label>
+             <Label fx:id="laWeather" onMouseClicked="#selectWeatherIcon" prefHeight="37.0" prefWidth="181.0" style="-fx-padding:10;" text="Weather Icon">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></Label>
+             <Label fx:id="labMaterial" onMouseClicked="#SelectMaterialDesignIcon" prefHeight="37.0" prefWidth="181.0" style="-fx-padding:10;" text="Material Design Icon">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+      <Label layoutY="664.0" prefHeight="17.0" prefWidth="181.0" text="Email : willsonantoine@gmail.com" AnchorPane.bottomAnchor="44.0" />
+      <Label layoutX="2.0" layoutY="685.0" prefHeight="17.0" prefWidth="111.0" text="Tel : +243990084881" AnchorPane.bottomAnchor="23.0" />
+      <Label layoutX="1.0" layoutY="706.0" prefHeight="17.0" prefWidth="181.0" text="RDC-GOMA 2020" AnchorPane.bottomAnchor="2.0" />
+   </children>
+</AnchorPane>
